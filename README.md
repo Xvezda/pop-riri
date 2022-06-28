@@ -11,7 +11,7 @@
 <li>how long would the site last? - one year, or more.</li><br>
 <br>
 <h2>Change Image Feature</h2>
-<li>what is this 'change image button? - you can change basic / pop images to whatever you upload.</li><br>
+<li>what is this 'change image' button? - you can change basic / pop images to whatever you upload.</li><br>
 <li>does it auto-generate popped images? - no.</li><br>
 <br>
 <h2>Leaderboards</h2>
