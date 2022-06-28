@@ -2,7 +2,7 @@
 <html>
 <head>
 <meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
 
 <!-- Primary Meta Tags -->
 <title>Pop-Riri!</title>
@@ -24,19 +24,39 @@
 <meta property="twitter:image" content="http://pop-it.click/riri00.jpg">
 </head>
 <script>
-  var counter = 0;
-  var audio = [];
-  var i;
-  var keyflag = 0;
-  for (i = 0; i < 4; ++i)
-  {
-	  const sound = new Audio('pop.mp3');
-	  audio.push(sound);
-	  audio[i].load();
-  }
-  audio.volume = 0.2;
+var counter = 0;
+var audio = [];
+var i;
+var keyflag = 0;  
 
-  function popclick()
+for (i = 0; i < 4; ++i)
+{
+  const sound = new Audio('pop.mp3');
+  audio.push(sound);
+  audio[i].load();
+}
+audio.volume = 0.2;
+
+
+function checkMobile()
+{
+  var varUA = navigator.userAgent.toLowerCase();
+
+  if ( varUA.indexOf('android') > -1) 
+  {
+    return "android";
+  }
+  else if( varUA.indexOf("iphone") > -1||varUA.indexOf("ipad") > -1||varUA.indexOf("ipod") > -1 )
+  {
+    return "ios";
+  }
+  else
+  {
+    return "other";
+  }
+}
+
+function popclick()
 {
 	var i;
 	for (i = 0; i < 4; ++i)
@@ -59,6 +79,10 @@
 		document.getElementById('img1').style.zIndex = 100;
 	}, 45);
 }
+
+
+
+
 function popkeydown()
 {
    var i;
@@ -404,7 +428,18 @@ function closefile()
     document.getElementById('counter').addEventListener('keydown', popkeydown);
     document.getElementById('counter').addEventListener('keyup', popkeyup);
 
-    document.getElementById('counter').addEventListener('click', popclick);
+    var mobile = (/iphone|ipad|ipod|android/i.test(navigator.userAgent.toLowerCase()));
+ 
+    if (mobile) 
+    { 
+      document.getElementById('counter').addEventListener('touchstart', popkeydown);
+      document.getElementById('counter').addEventListener('touchend', popkeyup);
+    }
+    else
+    {
+      document.getElementById('counter').addEventListener('click', popclick);
+    }
+
     document.getElementById('imgchangebutton').addEventListener('click', movetoimagechange);
     document.getElementById('closefileform').addEventListener('click', closefile);
   
