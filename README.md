@@ -24,8 +24,8 @@
 <br>
 <h2>Known bugs</h2>
 <li>Sound/click not proper on IOS 14 : updating to newest version of IOS would fix it. </li><br>
-<li>riri popping twice when spacebar pressed</li><br>
-<li>riri popping so fast when enter key pressed and not released</li><br>
+<li>(pc)riri popping twice when spacebar pressed</li><br>
+<li>(pc)riri popping so fast when enter key pressed and not released</li><br>
 <br>
 any questions would be appreciated via twitter, discord, email, whatever else.<br>
 please feel free to poke/dm me.<br>
