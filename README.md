@@ -4,9 +4,10 @@
 <li>For desktop users : Making your browser vertical would make your riri look better.</li>
 <br>
 <br>
-<h2>Recently Fixed</h2>
+<h2>Recently Fixed / Added</h2>
 <li>fast pops disturbed by double-tab on androids</li><br>
 <li>white screen after image change when uploaded file name contained empty space or special characters</li><br>
+<li>(pc)wheel up/down with hyper-fast-scroll mouse will show you the speed limit.</li><br>
 <br>
 <h2>Expected Questions</h2>
 <li>who made this - made by myself.</li><br>
@@ -24,7 +25,6 @@
 <br>
 <h2>Known bugs</h2>
 <li>Sound/click not proper on IOS 14 : updating to newest version of IOS would fix it. </li><br>
-<li>(pc)riri popping twice when spacebar pressed</li><br>
 <br>
 any questions would be appreciated via twitter, discord, email, whatever else.<br>
 please feel free to poke/dm me.<br>
