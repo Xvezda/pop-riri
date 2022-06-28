@@ -17,8 +17,7 @@
 <li>Leaderboards? - I've been working on it, but I've failed to link mysql database with main page. someday it may show up.</li><br>
 <br>
 <h2>Known bugs</h2>
-<li>Sound/click not proper on IOS 14</li><br>
-  : updating to newest version of IOS would fix it.
+<li>Sound/click not proper on IOS 14 : updating to newest version of IOS would fix it. </li><br>
 <li>riri popping twice when spacebar pressed</li><br>
 <br>
 any questions would be appreciated via twitter, discord, email, whatever else.<br>
