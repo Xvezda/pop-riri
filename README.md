@@ -23,6 +23,11 @@
 <li>riri popping so fast when enter key pressed and not released</li><br>
 <li>image change bug when filename contains ' '(empty space)<< trying to fix it now</li><br>
 <br>
+<h2>Recently fixed</h2>
+<li>fast pops disturbed by double-tab on androids</li><br>
+<li>image change bug when file name contains empty space or special characters</li><br>
+<br>
 any questions would be appreciated via twitter, discord, email, whatever else.<br>
 please feel free to poke me.<br>
+<br>
 <a href = "https://twitter.com/mosinori2256">>>twitter link<<</a><br>
