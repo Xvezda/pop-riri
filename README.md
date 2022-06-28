@@ -19,6 +19,7 @@
 <h2>Change Image Feature</h2>
 <li>what is this 'change image' button? - you can change basic / pop images to whatever you upload.</li><br>
 <li>does it auto-generate popped images? - no.</li><br>
+<li>max file size? - I didn't test the limits, but 1mb images were ok.</li><br>
 <br>
 <h2>Leaderboards</h2>
 <li>Leaderboards? - I've been working on it, but I've failed to link mysql database with main page. someday it may show up.</li><br>
@@ -26,6 +27,7 @@
 <h2>Known bugs</h2>
 <li>Sound/click not proper on IOS 14 : updating to newest version of IOS would fix it. </li><br>
 <li>pressing spacebars works as keyclick, instead of keydown/keyup.</li><br>
+<li>white screen when hangeul named images were uploaded</li><br>
 <br>
 <h2>I am thinking of...</h2>
 <li>Leaderboards</li><br>
