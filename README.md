@@ -1,6 +1,6 @@
 <h1># pop-riri</h1>
 
-*  For desktop users : Making your browser vertical would make riri look better.<br>
+*  For desktop users : Making your browser vertical would make riri look better.<br></br>
 
 <h2>Expected Questions</h2>
 <li>who made this - made by myself.</li><br>
@@ -22,4 +22,4 @@
 <li>riri popping twice when spacebar pressed</li><br>
 <br>
 any questions would be appreciated via twitter, discord, email, whatever else.<br>
-twitter : https://twitter.com/mosinori2256<br>
+[Twitter URL] (https://twitter.com/mosinori2256)<br>
