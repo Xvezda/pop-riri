@@ -1,6 +1,7 @@
 <h1># pop-riri</h1>
 
-*  For desktop users : Making your browser vertical would make riri look better.<br></br>
+<li><a href = "http://pop-riri.click/">>>Pop Riri<<</a><br></li>
+<li>For desktop users : Making your browser vertical would make riri look better.</li><br></br>
 
 <h2>Expected Questions</h2>
 <li>who made this - made by myself.</li><br>
