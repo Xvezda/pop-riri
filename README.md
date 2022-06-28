@@ -22,4 +22,4 @@
 <li>riri popping twice when spacebar pressed</li><br>
 <br>
 any questions would be appreciated via twitter, discord, email, whatever else.<br>
-twitter : <https://twitter.com/mosinori2256><br>
+twitter : https://twitter.com/mosinori2256<br>
