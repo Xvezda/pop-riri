@@ -24,4 +24,5 @@
 <li>image change bug when filename contains ' '(empty space)<< trying to fix it now</li><br>
 <br>
 any questions would be appreciated via twitter, discord, email, whatever else.<br>
+please feel free to poke me.<br>
 <a href = "https://twitter.com/mosinori2256">>>twitter link<<</a><br>
