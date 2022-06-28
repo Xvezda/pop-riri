@@ -33,6 +33,6 @@
 <br>
 <h2>P.S.</h2>
 any bug reports or questions would be appreciated via twitter, discord, email, whatever else.<br>
-please feel free to poke/dm me.<br>
+please feel free to poke(dm) me.<br>
 <br>
 <a href = "https://twitter.com/mosinori2256">>>twitter link<<</a><br>
