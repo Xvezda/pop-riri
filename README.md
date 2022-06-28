@@ -15,7 +15,11 @@
 <br>
 <h2>Leaderboards</h2>
 * Leaderboards? - I've been working on it, but I've failed to link mysql database with main page. someday it may show up.<br>
-
+<br>
+<h2>Known bugs</h2>
+* Sound/click not proper on IOS 14<br>
+  : updating to newest version of IOS would fix it.
+* riri popping twice when spacebar pressed<br>
 
 any questions would be appreciated via twitter, discord, email, whatever else.<br>
-twitter : <https://twitter.com/mosinori2256>
+twitter : <https://twitter.com/mosinori2256><br>
