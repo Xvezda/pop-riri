@@ -22,4 +22,4 @@
 <li>riri popping so fast when enter key pressed and not released</li><br>
 <br>
 any questions would be appreciated via twitter, discord, email, whatever else.<br>
-[Twitter URL] (https://twitter.com/mosinori2256)<br>
+<a href = "https://twitter.com/mosinori2256">>>twitter link<<</a><br>
