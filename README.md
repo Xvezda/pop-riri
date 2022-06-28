@@ -17,7 +17,8 @@
 <li>how long would the site last? - one year, or more.</li><br>
 <br>
 <h2>Change Image Feature</h2>
-<li>what is this 'change image' button? - you can change basic / pop images to whatever you upload.</li><br>
+<li>what is this 'change image' button? - you can change basic / pop images to whatever you upload.<br>
+It's designed for artists who are able to draw, but cannot create websites.</li><br>
 <li>does it auto-generate popped images? - no.</li><br>
 <li>max file size? - I didn't test the limits, but 4.2mb images were ok.</li><br>
 <br>
