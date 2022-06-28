@@ -19,7 +19,7 @@
 <h2>Change Image Feature</h2>
 <li>what is this 'change image' button? - you can change basic / pop images to whatever you upload.</li><br>
 <li>does it auto-generate popped images? - no.</li><br>
-<li>max file size? - I didn't test the limits, but 1mb images were ok.</li><br>
+<li>max file size? - I didn't test the limits, but 4.2mb images were ok.</li><br>
 <br>
 <h2>Leaderboards</h2>
 <li>Leaderboards? - I've been working on it, but I've failed to link mysql database with main page. someday it may show up.</li><br>
