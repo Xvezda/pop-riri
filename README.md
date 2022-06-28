@@ -27,7 +27,7 @@
 <h2>Known bugs</h2>
 <li>Sound/click not proper on IOS 14 : updating to newest version of IOS would fix it. </li><br>
 <li>pressing spacebars works as keyclick, instead of keydown/keyup.</li><br>
-<li>white screen when hangeul named images were uploaded</li><br>
+<li>white screen when japanese/korean named images were uploaded</li><br>
 <br>
 <h2>I am thinking of...</h2>
 <li>Leaderboards</li><br>
