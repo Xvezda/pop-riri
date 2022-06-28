@@ -5,23 +5,23 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
 
 <!-- Primary Meta Tags -->
-<title>Pop-Riri!</title>
-<meta name="title" content="Pop-It!">
+<title>Pop-it!</title>
+<meta name="title" content="Pop-it!">
 <meta name="description" content="Pop your Waifu">
 
 <!-- Open Graph / Facebook -->
 <meta property="og:type" content="website">
-<meta property="og:url" content="http://pop-it.click/">
-<meta property="og:title" content="Pop-It!">
+<meta property="og:url" content="http://pop-it.click?id=Laplus">
+<meta property="og:title" content="Pop-it!">
 <meta property="og:description" content="Pop your Waifu">
-<meta property="og:image" content="http://pop-it.click/riri00.jpg">
+<meta property="og:image" content="http://pop-it.click/comfyla00.png">
 
 <!-- Twitter -->
 <meta property="twitter:card" content="summary_large_image">
-<meta property="twitter:url" content="http://pop-it.click/">
-<meta property="twitter:title" content="Pop-It!">
+<meta property="twitter:url" content="http://pop-it.click?id=Laplus">
+<meta property="twitter:title" content="Pop-it!">
 <meta property="twitter:description" content="Pop your Waifu">
-<meta property="twitter:image" content="http://pop-it.click/riri00.jpg">
+<meta property="twitter:image" content="http://pop-it.click/comfyla00.png">
 </head>
 <script>
 var counter = 0;
@@ -147,8 +147,8 @@ function closefile()
 }
 </script>
 <?
-    $img1name = 'riri00.jpg';
-    $img2name = 'riri01.jpg';
+    $img1name = 'comfyla00.png';
+    $img2name = 'comfyla01.png';
 
     if(isset($_POST['submit']))
     {
@@ -415,7 +415,7 @@ function closefile()
   <div id = "getfilediv">
     <button id="closefileform">X</button>
     <form id = "getfileform" action='<? echo $_SERVER['PHP_SELF']; ?>' method="post" enctype="multipart/form-data">
-      Pop Riri<br>
+      Pop-It!<br>
       <p>
       <br>
       Only png or jpg files are allowed.<br>
@@ -436,11 +436,11 @@ function closefile()
   </div>
   
   <div id=artist>
-    <img src='kaonashi.png'><br>
+    <img src=''><br>
     <p>
-      made by<br>
-      <a href = "https://twitter.com/mosinori2256" target='_blank'>@mosinori2256</a><br>
-      <a href = "http://github.com/mosinori/pop-riri/" target='_blank'>github</a><br>
+      Drawn by...<br>
+      <a href = "" target='_blank'>twitter</a><br>
+      <a href = "" target='_blank'>pixiv</a><br>
     </p>
   </div>
 </body>

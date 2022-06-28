@@ -1,24 +1,26 @@
 <html>
-    <!-- Primary Meta Tags -->
 <title>Pop-Riri!</title>
+
+<head>
+<!-- https://metatags.io/ -->
 <meta name="title" content="Pop-Riri!">
 <meta name="description" content="Pop Riri">
-<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
 
 <!-- Open Graph / Facebook -->
 <meta property="og:type" content="website">
-<meta property="og:url" content="http://pop-it.click/">
+<meta property="og:url" content="http://pop-riri.click/">
 <meta property="og:title" content="Pop-Riri!">
 <meta property="og:description" content="Pop Riri">
-<meta property="og:image" content="http://pop-it.click/riri00.jpg">
+<meta property="og:image" content="http://pop-riri.click/riri00.jpg">
 
 <!-- Twitter -->
 <meta property="twitter:card" content="summary_large_image">
-<meta property="twitter:url" content="http://pop-it.click/">
+<meta property="twitter:url" content="http://pop-riri.click/">
 <meta property="twitter:title" content="Pop-Riri!">
 <meta property="twitter:description" content="Pop Riri">
-<meta property="twitter:image" content="http://pop-it.click/riri00.jpg">
-<head>
+<meta property="twitter:image" content="http://pop-riri.click/riri00.jpg">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
 <style>
 iframe
 {
@@ -31,9 +33,18 @@ body
 </style>
 </head>
 <script>
-var webUrl = "pop.php";
 window.onload = function() 
-{ 
+{
+    var webUrl = "pop.php";
+
+    const urlParams = new URL(location.href).searchParams;
+    const id = urlParams.get('id');
+
+    if(id == "Laplus")
+    {
+        var webUrl = "popLaplus.php";
+        document.title = "Pop-Laplus!";
+    }
     window.document.body.ownerDocument.clear();
     var ifrmFlag = document.getElementById('ifrm');
     if(ifrmFlag != null && ifrmFlag != "null" && ifrmFlag != "")
