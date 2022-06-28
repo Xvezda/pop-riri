@@ -6,7 +6,7 @@
 <br>
 <h2>Recently Fixed</h2>
 <li>fast pops disturbed by double-tab on androids</li><br>
-<li>image change bug when file name contains empty space or special characters</li><br>
+<li>white screen after image change when uploaded file name contained empty space or special characters</li><br>
 <br>
 <h2>Expected Questions</h2>
 <li>who made this - made by myself.</li><br>
