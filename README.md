@@ -1,4 +1,4 @@
-<h1># pop-riri</h1>
+<h1>Pop-Riri</h1>
 
 <li><a href = "http://pop-riri.click/">>>Pop Riri<<</a></li><br>
 <li>For desktop users : Making your browser vertical would make your riri look better.</li>
