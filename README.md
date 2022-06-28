@@ -6,7 +6,7 @@
 <br>
 <h2>Recently Fixed / Added</h2>
 <li>(fixed)fast pops disturbed by double-tab on androids</li><br>
-<li>(fixed)white screen after image change when uploaded file name contained empty space or special characters</li><br>
+<li>(fixed)white screen after image change when file containing empty space or special characters in name was uploaded</li><br>
 <li>(added)(pc)wheel up/down with hyper-fast-scroll mouse if you wish to know the speed limit.</li><br>
 <br>
 <h2>Expected Questions</h2>
