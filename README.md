@@ -26,7 +26,7 @@
 <h2>Known bugs</h2>
 <li>Sound/click not proper on IOS 14 : updating to newest version of IOS would fix it. </li><br>
 <br>
-any questions would be appreciated via twitter, discord, email, whatever else.<br>
+any bug reports or questions would be appreciated via twitter, discord, email, whatever else.<br>
 please feel free to poke/dm me.<br>
 <br>
 <a href = "https://twitter.com/mosinori2256">>>twitter link<<</a><br>
