@@ -1,6 +1,7 @@
-<h1>Pop-Riri</h1>
+<h1>Site Links</h1>
 
 <li><a href = "http://pop-riri.click/">>>Pop Riri<<</a></li><br>
+<li><a href = "http://pop-it.click?id=Laplus">>>Pop Laplus<<</a>(btw who's the artist of this we need to talk please contact me)</li><br>
 <li>For desktop users : Making your browser vertical would make your riri look better.</li>
 <br>
 <br>
