@@ -25,6 +25,7 @@
 <br>
 <h2>Known bugs</h2>
 <li>Sound/click not proper on IOS 14 : updating to newest version of IOS would fix it. </li><br>
+<li>pressing spacebars works as keyclick, instead of keydown/keyup.</li><br>
 <br>
 any bug reports or questions would be appreciated via twitter, discord, email, whatever else.<br>
 please feel free to poke/dm me.<br>
