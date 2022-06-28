@@ -58,6 +58,10 @@ function checkMobile()
 
 function popclick()
 {
+  if(keyflag)
+  {
+    return;
+  }
 	var i;
 	for (i = 0; i < 4; ++i)
 	{
@@ -80,14 +84,17 @@ function popclick()
 	}, 45);
 }
 
-
-
-
 function popkeydown()
 {
-   var i;
-   for (i = 0; i < 4; ++i)
-   {
+  var i;
+  if(!keyflag)
+  {
+    if(event.keyCode == 32)
+    {
+      return;
+    }
+    for (i = 0; i < 4; ++i)
+    {
       if(keyflag)
       {
         //
@@ -97,21 +104,25 @@ function popkeydown()
          audio[i].play();
          break;
       }
-   }
-   document.getElementById('img1').style.zIndex = 0;
-   keyflag = 1;
+    }
+    document.getElementById('img1').style.zIndex = 0;
+    keyflag = 1;
+  }
 }
 
 function popkeyup()
 {
-  ++counter;
+  if(keyflag)
+  {
+    ++counter;
   
-   document.getElementById('counter').value = counter;
-  var randomColor = Math.floor(Math.random()*16777215).toString(16);
-  document.getElementById('counter').style.color = "#" + randomColor;
+    document.getElementById('counter').value = counter;
+    var randomColor = Math.floor(Math.random()*16777215).toString(16);
+    document.getElementById('counter').style.color = "#" + randomColor;
 
-  document.getElementById('img1').style.zIndex = 100;
-  keyflag = 0;
+    document.getElementById('img1').style.zIndex = 100;
+    keyflag = 0;
+  }
 }
 
 function movetoimagechange()
@@ -142,14 +153,24 @@ function closefile()
     if(isset($_POST['submit']))
     {
         $upload_dir = 'upload/';
+
         $upload_img1 = $upload_dir . $_FILES['BasicImage']['name'];
         $upload_img2 = $upload_dir . $_FILES['PopImage']['name'];
 
+        $upload_img1 = str_ireplace(" ", "", $upload_img1);
+        $upload_img2 = str_ireplace(" ", "", $upload_img2);
+
+        $upload_img1 = $string = preg_replace ("/[ #\&\+\-%@=\/\\\:;,\.'\"\^`~\_|\!\?\*$#<>()\[\]\{\}]/i", "",  $upload_img1); 
+        $upload_img2 = $string = preg_replace ("/[ #\&\+\-%@=\/\\\:;,\.'\"\^`~\_|\!\?\*$#<>()\[\]\{\}]/i", "",  $upload_img2); 
+
+        $upload_img1 = preg_replace("/\.(php|phtm|htm|cgi|pl|exe|jsp|asp|inc)/i", "$0-x", $upload_img1);
+        $upload_img2 = preg_replace("/\.(php|phtm|htm|cgi|pl|exe|jsp|asp|inc)/i", "$0-x", $upload_img2);
+
+        $upload_img1 = iconv("utf-8", "CP949", $upload_img1);
+        $upload_img2 = iconv("utf-8", "CP949", $upload_img2);
+
         move_uploaded_file($_FILES['BasicImage']['tmp_name'], $upload_img1);
         move_uploaded_file($_FILES['PopImage']['tmp_name'], $upload_img2);
-    
-        $file_name1 = iconv("utf-8", "CP949", $upload_img1);
-        $file_name2 = iconv("utf-8", "CP949", $upload_img2);
 
         $img1name = $upload_img1;
         $img2name = $upload_img2;
@@ -418,6 +439,7 @@ function closefile()
     <p>
       made by<br>
       @mosinori2256<br>
+      http://github.com/mosinori/pop-riri/<br>
     </p>
   </div>
 </body>
@@ -425,12 +447,9 @@ function closefile()
 <script>
   window.onload = function()
   {
-    document.getElementById('counter').addEventListener('keydown', popkeydown);
-    document.getElementById('counter').addEventListener('keyup', popkeyup);
-
     var mobile = (/iphone|ipad|ipod|android/i.test(navigator.userAgent.toLowerCase()));
  
-    if (mobile) 
+    if (mobile)
     { 
       document.getElementById('counter').addEventListener('touchstart', popkeydown);
       document.getElementById('counter').addEventListener('touchend', popkeyup);
@@ -438,6 +457,12 @@ function closefile()
     else
     {
       document.getElementById('counter').addEventListener('click', popclick);
+
+      document.getElementById('counter').addEventListener('wheel', popkeydown);
+      document.getElementById('counter').addEventListener('wheel', popkeyup);
+
+      document.getElementById('counter').addEventListener('keydown', popkeydown);
+      document.getElementById('counter').addEventListener('keyup', popkeyup);
     }
 
     document.getElementById('imgchangebutton').addEventListener('click', movetoimagechange);

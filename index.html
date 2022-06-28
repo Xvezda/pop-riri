@@ -18,13 +18,45 @@
 <meta property="twitter:title" content="Pop-Riri!">
 <meta property="twitter:description" content="Pop Riri">
 <meta property="twitter:image" content="http://pop-it.click/riri00.jpg">
-
+<head>
+<style>
+iframe
+{
+    margin : 0;
+}
+body
+{
+    margin : 0;
+}
+</style>
+</head>
+<script>
+var webUrl = "pop.php";
+window.onload = function() 
+{ 
+    window.document.body.ownerDocument.clear();
+    var ifrmFlag = document.getElementById('ifrm');
+    if(ifrmFlag != null && ifrmFlag != "null" && ifrmFlag != "")
+    {
+      document.body.removeChild(ifrmFlag);
+    }
+    var iframe = document.createElement("iframe");
+    iframe.id = "ifrm";
+    iframe.src = webUrl;
+    iframe.width = "100%";
+    iframe.height = "100%";
+    iframe.frameBorder = "0";
+    iframe.scrolling = "no";
+    document.body.appendChild(iframe);
+};
+</script>
+<!--
 <frameset rows="*,0" border=0> 
 
     <frame src="pop.php" frameborder=0 scrolling=auto>
     
 </frameset>
-
+-->
 <!--<meta http-equiv="refresh" content="0; url=pop.php"></meta>*/ -->
 
 </html>
