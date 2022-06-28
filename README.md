@@ -30,6 +30,7 @@
 <li>white screen when japanese/korean named images were uploaded</li><br>
 <br>
 <h2>I am thinking of...</h2>
+<li>Bug Fix</li><br>
 <li>Leaderboards</li><br>
 <li>Sharable site link with uploaded images</li><br>
 <br>
