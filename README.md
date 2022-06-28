@@ -30,7 +30,8 @@
 <h2>I am thinking of...</h2>
 <li>Leaderboards</li><br>
 <li>Sharable site link with uploaded images</li><br>
-
+<br>
+<h2>P.S.</h2>
 any bug reports or questions would be appreciated via twitter, discord, email, whatever else.<br>
 please feel free to poke/dm me.<br>
 <br>
