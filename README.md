@@ -33,7 +33,7 @@ It's designed for artists who are able to draw, but cannot create websites.</li>
 <br>
 <h2>I am thinking of...</h2>
 <li>Bug Fix</li><br>
-<li>Leaderboards</li><br>
+<li>Making the site Https(I've tried a bit, but failed)</li><br>
 <li>Sharable site link with uploaded images like <a href = "http://pop-it.click?id=Laplus">Comfy La+</a>(btw who's the artist of this we need to talk please contact me)</li><br>
 <br>
 <h2>P.S.</h2>
