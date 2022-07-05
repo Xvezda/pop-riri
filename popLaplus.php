@@ -256,28 +256,31 @@ function closefile()
     position : fixed;
     bottom : 0;
     left : 0;
-    
 
-    width : 4vw;
-    height : 4vh;
-    padding : 1rem;
+    border : 1px solid skyblue;
+
+    width : 6vw;
+    height : 10vh;
 
     background : transparent;
 
     font-weight : bold;
+    font-size : 5vh;
+
+    flex-direction : column;
     display : flex;
-    justify-content : space-between;
+    justify-content : flex-start;
     align-items : center;
 
     z-index : 200;
   }
   #imgchangebutton
   {
-    width : 4vw;
-    height : 4vh;
-    overflow:hidden;
-    font-size : 1vh;
+    width : 6vw;
+    height : 10vh;
 
+    overflow:hidden;
+    
     z-index : 201;
 
     /* color : randomcolor; */
@@ -289,32 +292,35 @@ function closefile()
     position : fixed;
     bottom : 0;
     left : 0;
-    
 
-    width : 15vw;
-    height : 15vh;
-    padding : 1rem;
+    border : 1px solid skyblue;
+
+    width : 10vw;
+    height : 10vh;
 
     background : transparent;
 
     font-weight : bold;
+
+    flex-direction : column;
     display : flex;
-    justify-content : space-between;
+    justify-content : flex-start;
     align-items : center;
 
     z-index : 200;
   }
   #imgchangebutton
   {
-    width : 15vw;
-    height : 15vh;
+    width : 10vw;
+    height : 10vh;
+
     overflow:hidden;
     font-size : 2vh;
 
     z-index : 201;
 
     /* color : randomcolor; */
-  } 
+  }
   }
   #getfilediv
   {
@@ -404,7 +410,7 @@ function closefile()
 </style>
 <header>
   <nav>
-    <button id = "imgchangebutton" style = "background : transparent;border:none; border-right : 0px; border-top : 0px; border-left : 0px; border-bottom : 0px;">Change<br>Image</button>
+    <button id = "imgchangebutton" style = "background : transparent;border:none; border-right : 0px; border-top : 0px; border-left : 0px; border-bottom : 0px;">Credits</button>
   </nav>
 </header>
 <body>

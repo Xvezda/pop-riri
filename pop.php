@@ -320,7 +320,7 @@ function closefile()
     z-index : 201;
 
     /* color : randomcolor; */
-  } 
+  }
   }
   #getfilediv
   {
