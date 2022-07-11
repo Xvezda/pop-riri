@@ -420,7 +420,7 @@ function closefile()
 
   <div id = "getfilediv">
     <button id="closefileform">X</button>
-    <form id = "getfileform" action='<? echo $_SERVER['PHP_SELF']; ?>' method="post" enctype="multipart/form-data">
+    <form id = "getfileform" action='<? echo htmlspecialchars($_SERVER['PHP_SELF']); ?>' method="post" enctype="multipart/form-data">
       Pop Riri<br>
       <p>
       <br>
