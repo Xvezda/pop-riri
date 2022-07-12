@@ -158,8 +158,8 @@ function closefile()
       $upload_img1 = str_ireplace(" ", "", $upload_img1);
       $upload_img2 = str_ireplace(" ", "", $upload_img2);
 
-      $upload_img1 = $string = preg_replace ("/[ #\&\+\-%@=\/\\\:;,\.'\"\^`~\_|\!\?\*$#<>()\[\]\{\}]/i", "",  $upload_img1); 
-      $upload_img2 = $string = preg_replace ("/[ #\&\+\-%@=\/\\\:;,\.'\"\^`~\_|\!\?\*$#<>()\[\]\{\}]/i", "",  $upload_img2); 
+      $upload_img1 = $string = preg_replace ("/[ #\&\+\-%@=\/\\\:;,\'\"\^`~\_|\!\?\*$#<>()\[\]\{\}]/i", "",  $upload_img1); 
+      $upload_img2 = $string = preg_replace ("/[ #\&\+\-%@=\/\\\:;,\'\"\^`~\_|\!\?\*$#<>()\[\]\{\}]/i", "",  $upload_img2); 
 
       $upload_img1 = preg_replace("/\.(php|phtm|htm|cgi|pl|exe|jsp|asp|inc)/i", "$0-x", $upload_img1);
       $upload_img2 = preg_replace("/\.(php|phtm|htm|cgi|pl|exe|jsp|asp|inc)/i", "$0-x", $upload_img2);
@@ -182,6 +182,7 @@ function closefile()
 <style>
   html
   {
+    -webkit-tap-highlight-color: transparent;
     height : 100vh;
     width : 100vw;
   }

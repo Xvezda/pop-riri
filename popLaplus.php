@@ -152,36 +152,37 @@ function closefile()
 
     if(isset($_POST['submit']))
     {
-        $upload_img1 = $_FILES['BasicImage']['name'];
-        $upload_img2 = $_FILES['PopImage']['name'];
+      $upload_img1 = $_FILES['BasicImage']['name'];
+      $upload_img2 = $_FILES['PopImage']['name'];
 
-        $upload_img1 = str_ireplace(" ", "", $upload_img1);
-        $upload_img2 = str_ireplace(" ", "", $upload_img2);
+      $upload_img1 = str_ireplace(" ", "", $upload_img1);
+      $upload_img2 = str_ireplace(" ", "", $upload_img2);
 
-        $upload_img1 = $string = preg_replace ("/[ #\&\+\-%@=\/\\\:;,\.'\"\^`~\_|\!\?\*$#<>()\[\]\{\}]/i", "",  $upload_img1); 
-        $upload_img2 = $string = preg_replace ("/[ #\&\+\-%@=\/\\\:;,\.'\"\^`~\_|\!\?\*$#<>()\[\]\{\}]/i", "",  $upload_img2); 
+      $upload_img1 = $string = preg_replace ("/[ #\&\+\-%@=\/\\\:;,\'\"\^`~\_|\!\?\*$#<>()\[\]\{\}]/i", "",  $upload_img1); 
+      $upload_img2 = $string = preg_replace ("/[ #\&\+\-%@=\/\\\:;,\'\"\^`~\_|\!\?\*$#<>()\[\]\{\}]/i", "",  $upload_img2); 
 
-        $upload_img1 = preg_replace("/\.(php|phtm|htm|cgi|pl|exe|jsp|asp|inc)/i", "$0-x", $upload_img1);
-        $upload_img2 = preg_replace("/\.(php|phtm|htm|cgi|pl|exe|jsp|asp|inc)/i", "$0-x", $upload_img2);
+      $upload_img1 = preg_replace("/\.(php|phtm|htm|cgi|pl|exe|jsp|asp|inc)/i", "$0-x", $upload_img1);
+      $upload_img2 = preg_replace("/\.(php|phtm|htm|cgi|pl|exe|jsp|asp|inc)/i", "$0-x", $upload_img2);
 
-        $upload_img1 = iconv("utf-8", "CP949", $upload_img1);
-        $upload_img2 = iconv("utf-8", "CP949", $upload_img2);
+      $upload_img1 = iconv("utf-8", "CP949", $upload_img1);
+      $upload_img2 = iconv("utf-8", "CP949", $upload_img2);
 
-        $upload_dir = 'upload/';
-        $upload_img1 = $upload_dir . $upload_img1;
-        $upload_img2 = $upload_dir . $upload_img2;
+      $upload_dir = 'upload/';
+      $upload_img1 = $upload_dir . $upload_img1;
+      $upload_img2 = $upload_dir . $upload_img2;
 
-        move_uploaded_file($_FILES['BasicImage']['tmp_name'], $upload_img1);
-        move_uploaded_file($_FILES['PopImage']['tmp_name'], $upload_img2);
+      move_uploaded_file($_FILES['BasicImage']['tmp_name'], $upload_img1);
+      move_uploaded_file($_FILES['PopImage']['tmp_name'], $upload_img2);
 
-        $img1name = $upload_img1;
-        $img2name = $upload_img2;
+      $img1name = $upload_img1;
+      $img2name = $upload_img2;
     }
 
 ?>
 <style>
   html
   {
+    -webkit-tap-highlight-color: transparent;
     height : 100vh;
     width : 100vw;
   }
