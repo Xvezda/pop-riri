@@ -2,7 +2,7 @@
 
 <li><a href = "http://pop-riri.click/">>>Pop Riri<<</a></li><br>
 <li><a href = "http://pop-it.click?id=Laplus">>>Pop Laplus<<</a>(I'm looking for the artist of this we need to talk please contact me)</li><br>
-<li><a href = "http://pop-it.click?id=MarieYono">>>Pop Marie Yono<<</a>(I'm looking for the artist of this we need to talk please contact me)</li><br>
+<li><a href = "http://pop-it.click?id=MarieYono">>>Pop Marie Yono<<</a></li><br>
 <li>For desktop users : Making your browser vertical would make your riri look better.</li>
 <br>
 <br>
