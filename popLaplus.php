@@ -152,10 +152,8 @@ function closefile()
 
     if(isset($_POST['submit']))
     {
-        $upload_dir = 'upload/';
-
-        $upload_img1 = $upload_dir . $_FILES['BasicImage']['name'];
-        $upload_img2 = $upload_dir . $_FILES['PopImage']['name'];
+        $upload_img1 = $_FILES['BasicImage']['name'];
+        $upload_img2 = $_FILES['PopImage']['name'];
 
         $upload_img1 = str_ireplace(" ", "", $upload_img1);
         $upload_img2 = str_ireplace(" ", "", $upload_img2);
@@ -168,6 +166,10 @@ function closefile()
 
         $upload_img1 = iconv("utf-8", "CP949", $upload_img1);
         $upload_img2 = iconv("utf-8", "CP949", $upload_img2);
+
+        $upload_dir = 'upload/';
+        $upload_img1 = $upload_dir . $upload_img1;
+        $upload_img2 = $upload_dir . $upload_img2;
 
         move_uploaded_file($_FILES['BasicImage']['tmp_name'], $upload_img1);
         move_uploaded_file($_FILES['PopImage']['tmp_name'], $upload_img2);
